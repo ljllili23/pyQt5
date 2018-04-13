@@ -11,7 +11,7 @@ def addItem():
     if not dlg.lineEdit.text()=='':
         dlg.listWidget.addItem(dlg.lineEdit.text())
         dlg.lineEdit.setText("")
-app = QtWidgets.QApplication([])
+app = QApplication([])
 dlg = uic.loadUi('test.ui')
 QMessageBox.information(None,"Title","Message")
 dlg.pushButton.clicked.connect(addItem)
